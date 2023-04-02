@@ -12,7 +12,9 @@ app.use(cors({
     origin:"*"
 }))
 app.use(express.json())
-
+app.get("/",(req,res)=>{
+    res.send("Welome to the backend of fitness booking system");
+})
 app.use("/user",signupRoute)
 app.use("/trainer",trainerRouter)
 app.use("/booking",bookingRoutes)
