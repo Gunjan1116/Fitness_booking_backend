@@ -62,7 +62,7 @@ bookingRoutes.post("/create", authenticate, async (req, res) => {//create new bo
             service: 'gmail',
             auth: {
                 user: 'ajitkhatua286@gmail.com',
-                pass: 'ezfgqbrkxpmcjkqr'
+                pass: process.env.emailpassword
             }
         });
         const mailOptions = {
