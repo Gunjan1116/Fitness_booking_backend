@@ -4,6 +4,8 @@ const { Bookingmodel } = require("../models/bookingModel");
 
 const { authenticate } = require("../middlewares/authenticateMiddleware")
 
+require("dotenv").config();
+
 const bookingRoutes = express.Router();
 const nodemailer = require("nodemailer")
 
